@@ -24,8 +24,8 @@ Before first use:
 
 1. Make sure you already have Google BigQuery access permissions
 2. Run `auth.py` and follow the authentication prompts in your browser
-3. Create `apikey.txt` to save the API key locally and safely (outside Github)
-   (you can find the `.txt `file, or just search for `API_KEY` in  [BA Guide](https://docs.google.com/document/d/1aGXIwJVwVOf-CDWkDe-NopexRr57tte54TFgjL2FlJE/edit?usp=drive_link), paste the key in a new `.txt` file, and rename it to `apikey.txt`)
+3. Modify `apikey.txt` to save the API key locally and safely (outside Github) (it now serves as a placeholder for easier understanding)
+   (you can find the `.txt `file in Google Drive, or just search for `API_KEY` in  [BA Guide](https://docs.google.com/document/d/1aGXIwJVwVOf-CDWkDe-NopexRr57tte54TFgjL2FlJE/edit?usp=drive_link), paste the key in a new `.txt` file, and rename it to `apikey.txt`)
 
 ### Data Download Process
 
