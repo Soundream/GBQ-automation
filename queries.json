@@ -1,0 +1,132 @@
+{
+    "folders": [
+        {
+            "name": "Market Share Report",
+            "folder": "market_share",
+            "queries": [
+                {
+                    "name": "App Annie Report Data",
+                    "query": "SELECT * FROM [wego-cloud:appannie.appannie_tableau_report_updated_2019_03_05]",
+                    "legacy": true,
+                    "filename_pattern": "yyyymm_appannie"
+                },
+                {
+                    "name": "App Annie Ranking Report",
+                    "query": "SELECT * FROM [wego-cloud:appannie.appannie_ranking_tableau_report]",
+                    "legacy": true,
+                    "filename_pattern": "yyyymm_appannie_ranking"
+                },
+                {
+                    "name": "SimilarWeb Report Data",
+                    "query": "SELECT * FROM [wego-cloud:SimilarWeb.similarweb_tableau_report_updated_2019_03_10]",
+                    "legacy": true,
+                    "filename_pattern": "yyyymm_similarweb"
+                }
+            ]
+        },
+        {
+            "name": "Key Brands Report",
+            "folder": "key_brands",
+            "queries": [
+                {
+                    "name": "App Downloads Line Chart",
+                    "query": "SELECT * FROM appannie.key_competitor_report_app_downloads_line_chart where month >= \"2019-11-01\"",
+                    "legacy": false,
+                    "filename_pattern": "yyyymm_app_downloads_line_chart"
+                },
+                {
+                    "name": "App Annie App Ratings",
+                    "template": "appannie_app_ratings.sql",
+                    "legacy": false,
+                    "filename_pattern": "yyyymm_appannie_app_ratings",
+                    "note": "Replace this query with the actual query from Google Sheets"
+                },
+                {
+                    "name": "Downstream Company 100k",
+                    "query": "SELECT * FROM SimilarWeb.key_competitor_report_downstream_company_100k",
+                    "legacy": false,
+                    "filename_pattern": "yyyymm_downstream_company_100k"
+                },
+                {
+                    "name": "Downstream Monthly",
+                    "query": "SELECT * FROM SimilarWeb.key_competitor_report_downstream_monthly",
+                    "legacy": false,
+                    "filename_pattern": "yyyymm_downstream_monthly"
+                },
+                {
+                    "name": "Handoffs Line Chart",
+                    "query": "SELECT * FROM SimilarWeb.key_competitor_report_handoffs_line_chart where month >= \"2019-11-01\"",
+                    "legacy": false,
+                    "filename_pattern": "yyyymm_handoffs_line_chart"
+                },
+                {
+                    "name": "Handoffs Table",
+                    "query": "SELECT * FROM SimilarWeb.key_competitor_report_handoffs_table",
+                    "legacy": false,
+                    "filename_pattern": "yyyymm_handoffs_table"
+                },
+                {
+                    "name": "Web Visits Dot Chart",
+                    "query": "SELECT * FROM SimilarWeb.key_competitor_report_web_visits_dot_chart",
+                    "legacy": false,
+                    "filename_pattern": "yyyymm_web_visits_dot_chart"
+                },
+                {
+                    "name": "Web Visits Line Chart",
+                    "query": "SELECT * FROM SimilarWeb.key_competitor_report_web_visits_line_chart where month >= \"2019-11-01\"",
+                    "legacy": false,
+                    "filename_pattern": "yyyymm_web_visits_line_chart"
+                },
+                {
+                    "name": "Web Traffic",
+                    "template": "web_traffic.sql",
+                    "legacy": false,
+                    "filename_pattern": "yyyymm_web_traffic",
+                    "note": "Replace this query with the actual query from Google Sheets"
+                },
+                {
+                    "name": "AppAnnie Tableau Report",
+                    "query": "SELECT * FROM [wego-cloud:appannie.appannie_tableau_report_updated_2019_03_05]",
+                    "legacy": true,
+                    "filename_pattern": "yyyymm_appannie_tableau_report"
+                },
+                {
+                    "name": "SimilarWeb Tableau Report",
+                    "query": "SELECT * FROM [wego-cloud:SimilarWeb.similarweb_tableau_report_updated_2019_03_10]",
+                    "legacy": true,
+                    "filename_pattern": "yyyymm_similarweb_tableau_report"
+                }
+            ]
+        },
+        {
+            "name": "ShopCash-Ecommerce Key Markets Reports",
+            "folder": "shopcash_markets",
+            "queries": [
+                {
+                    "name": "ShopCash AppAnnie Tableau Report",
+                    "query": "SELECT * FROM shopcash_appannie.appannie_tableau_report",
+                    "legacy": true,
+                    "filename_pattern": "yyyymm_appannie_tableau_report"
+                },
+                {
+                    "name": "ShopCash AppAnnie Ranking Tableau Report",
+                    "query": "SELECT * FROM shopcash_appannie.appannie_ranking_tableau_report",
+                    "legacy": true,
+                    "filename_pattern": "yyyymm_appannie_ranking_tableau_report"
+                },
+                {
+                    "name": "ShopCash SimilarWeb Tableau Report",
+                    "query": "SELECT * FROM shopcash_SimilarWeb.similarweb_tableau_report",
+                    "legacy": true,
+                    "filename_pattern": "yyyymm_similarweb_tableau_report"
+                },
+                {
+                    "name": "ShopCash AppAnnie Apps Usage Tableau Report",
+                    "query": "SELECT * FROM shopcash_appannie.appannie_apps_usage_tableau_report",
+                    "legacy": false,
+                    "filename_pattern": "yyyymm_appannie_apps_usage_tableau_report"
+                }
+            ]
+        }
+    ]
+} 
